@@ -1,14 +1,13 @@
-# Software: su naturaleza y cualidades (características) [^1]
+# Software: su naturaleza y cualidades (características) [^1][^2]
 
 [^1]: Traducción del Capítulo 2, _Software: Its Nature and Qualities_, de **Ghezzi, C., Jazayeri, M., Mandrioli, D.**, *Fundamentals of Software Engineering*, Prentice-Hall International, Singapore, 1991.
-
-[NOTA: *Quality* se traduce como Cualidad o como Característica.]
+[^2]: *Quality* se traduce como Cualidad o como Característica.
 
 El objetivo de cualquier actividad en ingeniería es construir algo —un producto—. El ingeniero civil construye un puente, el ingeniero aerospacial construye un avión, y el ingeniero eléctrico construye un circuito. El producto de la ingeniería de sistemas es un «sistema de software». No es tan tangible como los otros productos pero, no obstante, es un producto. Cumple una función.
 
-En cierta forma los productos de software son similares a otros productos de ingeniería, y en otros aspectos son muy diferentes. La característica que quizás hace que el software se diferencie más de otros productos de ingeniería es que el software es maleable[^2]. Podemos modificar el producto en sí —a diferencia de su diseño— con bastante facilidad. Esto hace que el software sea bastante diferente a otros productos tales como autos u hornos.
+En cierta forma los productos de software son similares a otros productos de ingeniería, y en otros aspectos son muy diferentes. La característica que quizás hace que el software se diferencie más de otros productos de ingeniería es que el software es maleable[^3]. Podemos modificar el producto en sí —a diferencia de su diseño— con bastante facilidad. Esto hace que el software sea bastante diferente a otros productos tales como autos u hornos.
 
-[^2]: Dicho de un material: Que se le puede dar otra forma sin romperlo. Definición en [diccionario de la RAE](https://dle.rae.es/maleable).
+[^3]: Dicho de un material: Que se le puede dar otra forma sin romperlo. Definición en [diccionario de la RAE](https://dle.rae.es/maleable).
 
 A menudo, a la maleabilidad del software se la utiliza mal. Aunque definitivamente es posible modificar un puente o un avión para satisfacer nuevas necesidades —por ejemplo, hacer que el puente aguante más tráfico o que el avión transporte más carga—, tal modificación no se toma a la ligera y, desde luego, no se intenta hacerla sin primero efectuar un cambio de diseño y verificar el impacto del cambio exhaustivamente. A los ingenieros de software, por otro lado, a menudo se les pide que lleven a cabo tales modificaciones sobre el software. Debido a su maleabilidad, pensamos que cambiar el software es fácil. En la práctica, no lo es.
 
