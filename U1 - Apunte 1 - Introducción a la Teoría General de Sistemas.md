@@ -217,10 +217,10 @@ Demuestra que los sistemas complejos que poseen formas intermedias estables evol
 ### 1.8.3 La Ley de Variedad Requerida (Ashby, 1956)
 Dice que un regulador debe tener al menos tanta variedad como el sistema que intenta controlar. Si un sistema puede fallar de 500 formas distintas pero la suite de tests solo cubre 50 escenarios, es matemáticamente imposible garantizar estabilidad. Esto fundamenta la necesidad de técnicas complementarias de testing: pruebas basadas en propiedades, fuzzing, chaos engineering.
  
-### La cibernética de segundo orden (von Foerster, 1974)
+### 1.8.4 La cibernética de segundo orden (von Foerster, 1974)
 Nos recuerda que el observador siempre es participante del sistema que estudia. En software, esto se manifiesta en los *Heisenbugs*: errores que desaparecen al intentar observarlos, porque el propio código de depuración altera el comportamiento del sistema. Nunca estamos completamente "fuera" del sistema que construimos.
  
-### La Ley de Gall (Gall, 1975)
+### 1.8.5 La Ley de Gall (Gall, 1975)
 Establece que "un sistema complejo que funciona se encuentra invariablemente que ha evolucionado a partir de un sistema simple que funcionaba. Un sistema complejo diseñado desde cero nunca funciona y no puede ser reparado para que funcione. Hay que empezar de nuevo con un sistema simple que funcione." Esta ley, formulada en *The Systems Bible*, complementa la Parábola de los Relojeros de Simon con una advertencia más contundente: no solo es *más eficiente* construir incrementalmente, sino que es la *única forma* de lograr un sistema complejo funcional. La Ley de Gall fundamenta desde la teoría de sistemas las prácticas de desarrollo iterativo, los prototipos evolutivos, y la estrategia de MVP (Producto Mínimo Viable): comenzar con algo simple que funcione y evolucionar desde ahí, en lugar de diseñar la complejidad final desde el inicio. Gall también enuncia la Primera Ley de Supervivencia de Sistemas: "un sistema que ignora la retroalimentación ya ha iniciado el proceso de inestabilidad terminal", conectando directamente con los conceptos de retroalimentación y homeostasis vistos anteriormente.
  
 ---
