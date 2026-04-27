@@ -291,4 +291,4 @@ Los puntos anteriores que la visibilidad del proyecto requiere no sólo que todo
 
 ---
 
-*El presente es una traducción realizada por alumnos del curso 1999 del Master en Informática de la Universidad Nacional de La Matanza.*
+*Este apunte es una adaptación de la traducción realizada por alumnos del curso 1999 del [Master en Informática de la Universidad Nacional de La Matanza](https://seruniversitario.com/buscar/carreras/maestria-en-informatica-unlam).*
