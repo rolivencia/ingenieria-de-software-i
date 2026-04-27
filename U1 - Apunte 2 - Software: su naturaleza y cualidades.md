@@ -1,6 +1,6 @@
 # Software: su naturaleza y cualidades (características) [^1]
 
-[^1]: Traducción del Capítulo 2 de **Ghezzi, C., Jazayeri, M., Mandrioli, D.**, *Fundamentals of Software Engineering*, Prentice-Hall International, Singapore, 1991.
+[^1]: Traducción del Capítulo 2, _Software: Its Nature and Qualities_, de **Ghezzi, C., Jazayeri, M., Mandrioli, D.**, *Fundamentals of Software Engineering*, Prentice-Hall International, Singapore, 1991.
 
 [NOTA: *Quality* se traduce como Cualidad o como Característica.]
 
