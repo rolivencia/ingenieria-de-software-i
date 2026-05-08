@@ -1,0 +1,13 @@
+# Caso de estudio: “La Grande Belleza”
+
+## Descripción del problema
+
+El complejo de canchas “La Grande Belleza”, ubicado en la ciudad de Esperanza, organizará, con motivo de su décimo aniversario, un torneo de fútbol 5 mixto. La empresa planea, además, la realización de torneos de fútbol 5 mixtos de manera periódica, inicialmente bimestral, a partir de este primer torneo. Los torneos estarán compuestos por una única categoría y tendrán una modalidad de liga, o round robin, en la cual todos los equipos se enfrentarán entre sí una única vez. La única categoría de la liga se encontrará conformada por 6 equipos, los cuales se enfrentarán entre sí a lo largo de cinco fechas consecutivas, comenzando el primer torneo durante el mes de febrero de 2026. Los partidos se desarrollarán los días sábados, comenzando el primer sábado del mes de febrero y continuando en los cinco sábados subsiguientes.
+
+La Sra. Mascaldone, ex-jugadora profesional de fútbol y actual dueña del complejo de 4 canchas donde se llevan adelante los partidos, ha realizado un acercamiento con su empresa para llevar adelante el desarrollo de una solución integral de software como parte del plan de digitalización de su organización.
+
+El sistema de software a desarrollar tiene el objetivo de brindar una gestión total del torneo en cuestión, facilitando y transparentando la organización de este y los futuros torneos de fútbol mixto que “La Grande Belleza” desea llevar adelante. El sistema permitirá la gestión de los equipos inscriptos para cada torneo, de la generación del fixture del torneo, del resultado de los partidos y del torneo en sí, tanto para consumo interno de la organización como para ser visibilizado hacia el público general.
+
+Luego de generar la base inicial de arquitectura de frontend y backend, el equipo de desarrollo de software de su empresa ha asignado al equipo estará encargado de llevar adelante el desarrollo de los requerimientos y funcionalidades del sistema, según las directivas de la Sra. Mascaldone y su equipo.
+
+La meta que persigue la Sra. Mascaldone como parte de esta renovación de su complejo deportivo es la de dar visibilidad a la comunidad de fútbol 5 mixto en su ciudad y proceder a una jerarquización de los torneos organizados por su firma, confiando en las habilidades del equipo de los técnicos en desarrollo de software de su empresa para llevar a buen término los desarrollos que el proyecto requiere. En vista del crecimiento que tiene en vista para su complejo de canchas y su negocio durante los próximos 5 años, considere que el sistema a desarrollar debe contemplar la posibilidad de ajustar la cantidad de equipos soportados y de torneos gestionados sin modificaciones arquitectónicas mayores.
