@@ -2,7 +2,20 @@
 
 por Frederick P. Brooks
 
+---
+
 > *No existe un solo desarrollo, ya sea tecnológico o de gestión, que por sí solo prometa, en una década, una mejora de al menos un orden de magnitud en la productividad, confiabilidad o simplicidad.*
+
+---
+
+<img width="830" height="432" alt="image" src="https://github.com/user-attachments/assets/150ef729-2bf9-4139-845a-967bc74d5374" />
+
+<figure class="epigraph">
+  <blockquote>
+    El hombre lobo de Eschenbach, Alemania: grabado de línea, 1685. Cortesía de The Grainger Collection, Nueva York.
+  </blockquote>
+</figure>
+
 
 ---
 
