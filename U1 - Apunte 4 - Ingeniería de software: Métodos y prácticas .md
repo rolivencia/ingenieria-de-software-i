@@ -40,8 +40,9 @@ Para comprender cómo, como comunidad de ingeniería de software, hemos mejorado
 
 Del enfoque *ad hoc* utilizado en los primeros años de la computación surgió el **método en cascada** alrededor de la década de 1960; en realidad, no se trataba de un único método, sino de toda una clase de métodos. Los métodos en cascada describen un proyecto de ingeniería de software como algo que atraviesa una serie de fases, tales como Requisitos, Diseño, Implementación (Codificación) y Verificación (es decir, pruebas y corrección de errores) (ver Figura 2.1).
 
-> **[FIGURA 2.1: Ciclo de vida en cascada]**
-> *Diagrama lineal con las fases: Requisitos (R) → Diseño (D) → Implementación / Código (I) → Verificación / Prueba (V).*
+<img width="600" height="428" alt="figura_2_1_ciclo_cascada" src="https://github.com/user-attachments/assets/02c3c448-4ad9-40fb-8c59-967b6eb8ffa4" />
+
+> **[FIGURA 2.1: Ciclo de vida en cascada]**: _Diagrama lineal con las fases: Requisitos (R) → Diseño (D) → Implementación / Código (I) → Verificación / Prueba (V)_.
 
 Si bien los métodos en cascada ayudaron a aportar cierta disciplina a la ingeniería de software, muchas personas intentaron seguir el modelo al pie de la letra, lo que causó problemas graves, especialmente en esfuerzos grandes y complejos. Esto se debía a que la ingeniería de software no es tan simple como indica esta representación lineal.
 
@@ -54,6 +55,8 @@ Incluso después de haber programado de acuerdo con el diseño, todavía no se s
 Ahora bien, puede que se sienta que se ha hecho el 80%. Lo único que queda es probar. En este punto, el emprendimiento casi siempre se desmorona, porque lo que hay que probar es demasiado grande para abordarlo como una sola pieza de trabajo. Es el código que proviene de todos los requisitos. Se creía que quedaba un 20%, pero ahora se siente que puede quedar un 80%. Este es un problema bien conocido y común de los métodos en cascada.
 
 Hay algunas lecciones aprendidas. Creer que se pueden especificar todos los requisitos por adelantado es un mito en la gran mayoría de las situaciones actuales. Esta lección aprendida ha llevado a la popularidad de los métodos de ciclo de vida más iterativos. **Iterar** significa que se pueden especificar algunos requisitos y se puede construir algo que cumpla con esos requisitos, pero, tan pronto como se empieza a usar lo construido, se sabrá cómo mejorarlo un poco. Luego se pueden especificar algunos requisitos más y construir, y probar estos hasta tener algo que se sienta listo para liberar. Pero, para ganar confianza, hay que involucrar a los usuarios en cada iteración para asegurarse de que lo que se tiene aporta valor.
+
+<img width="600" height="274" alt="figura_2_2_ciclo_iterativo" src="https://github.com/user-attachments/assets/5a99362d-d872-4239-9333-d6c06d694994" />
 
 > **[FIGURA 2.2: Ciclo de vida iterativo]**
 > *Diagrama con varias iteraciones a lo largo del tiempo (Iteración 1, Iteración 2, Iteración 3...), cada una conteniendo las fases R, D, I y V.*
@@ -71,6 +74,8 @@ Más tarde se popularizaron nuevas tendencias.
 #### 2.2.2.1 La Era de los Métodos Estructurados
 
 Desde finales de la década de 1960 hasta mediados de la de 1980, los métodos más populares separaban el software a desarrollar en las funciones a ejecutar y los datos sobre los que operarían dichas funciones: las funciones residiendo en un almacén de programas y los datos residiendo en un almacén de datos. Estos métodos no eran descabellados, porque las computadoras de esa época tenían un almacén de programas, para las funciones traducidas a código, y un almacén de datos. Mencionaremos solo dos de los métodos más populares de aquel momento: SADT (*Structured Analysis and Design Technique*, Técnica de Análisis y Diseño Estructurado) y SA/SD (*Structured Analysis / Structured Design*, Análisis Estructurado / Diseño Estructurado). Como estudiante, realmente no es necesario que aprendas nada más sobre estos métodos. Se usaban para todo tipo de ingeniería de software. No eran los únicos métodos existentes. Había una gran cantidad de métodos publicados disponibles y, alrededor de cada método, había personas que lo defendían con vehemencia. Fue en este momento de la historia de la ingeniería de software cuando comenzó la **guerra de los métodos**. Y, lamentablemente, ¡todavía no ha terminado!
+
+<img width="600" height="404" alt="figura_2_3_elemento_sadt" src="https://github.com/user-attachments/assets/d6a5a8fa-758a-430a-ac44-d14d7b97d019" />
 
 > **[FIGURA 2.3: Elemento básico de SADT]**
 > *Diagrama de un bloque "Función" con: Entrada (Input) por la izquierda, Salida (Output) por la derecha, Control por arriba y Mecanismos (Mechanisms) por abajo.*
