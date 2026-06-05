@@ -98,6 +98,8 @@ Con los componentes, evolucionó una familia de métodos completamente nueva. Lo
 
 En la segunda mitad de la década de 1990, OMG (un organismo de estándares llamado *Object Management Group*) sintió que era hora de al menos estandarizar la forma de representar los dibujos de software, es decir, las notaciones utilizadas para desarrollar software. Esto llevó a la creación de un grupo de trabajo para impulsar el desarrollo de un nuevo estándar. El trabajo dio como resultado el **Lenguaje Unificado de Modelado** (UML; ver Figura 2.4), que se utilizará más adelante en el libro.
 
+<img width="600" height="447" alt="figura_2_4_casos_de_uso_uml" src="https://github.com/user-attachments/assets/d7105f82-c129-4059-aa91-25f7eb650d00" />
+
 > **[FIGURA 2.4: Un diagrama (de hecho, un diagrama de Casos de Uso) del estándar UML]**
 > *Diagrama de casos de uso del dominio de telefonía, con actores como "Suscriptor que llama" (Calling Subscriber), "Suscriptor llamado" (Called Subscriber) y "Sistema de Facturación de Clientes" (Customer Billing System), y casos de uso como "Realizar llamada local" (Place Local Call), "Realizar llamada de larga distancia" (Place Long Distance Call), "Recuperar información de facturación del cliente" (Retrieve Customer Billing Information) y "Obtener historial de llamadas" (Get Call History).*
 
