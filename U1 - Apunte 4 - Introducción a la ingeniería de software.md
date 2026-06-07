@@ -37,6 +37,8 @@ Como usuario frecuente de aplicaciones como Facebook, Google, Snapchat, etc., ya
 
 Lo primerísimo que Smith aprendió fue cómo escribir un programa que muestra un simple "Hello World" en su pantalla, aunque en este caso tenemos un "Hello Essence!", como en la Figura 1.1. A través de eso aprendió sobre lenguajes de programación,
 
+<img width="1744" height="1219" alt="fig_1_1_hello_essence" src="https://github.com/user-attachments/assets/ab6d759d-ec82-46c5-8dd6-562c13167b81" />
+
 > **[FIGURA 1.1: Hello Essence]**
 > *Captura de pantalla del IDE Eclipse mostrando un pequeño programa en Java (clase `Hello`, paquete `essence`) cuyo método `main` ejecuta `System.out.println("Hello Essence!");`. En la consola inferior se ve la salida: `Hello Essence!`.*
 
@@ -69,6 +71,8 @@ Mientras Smith se preparaba para su entrevista de pasantía en la industria, int
 
 Para Smith, la ingeniería de software consistía en tomar una idea y formar un equipo de acuerdo con los requisitos. Luego, el equipo transforma los requisitos en un producto de software. Para hacerlo, el equipo participa en algún tipo de lluvia de ideas, consenso, escritura y prueba de código, llegando a una estructura estable, manteniendo la satisfacción del usuario en todo momento y, finalmente, entregando el producto de software. Esto requiere que el equipo tenga competencias en codificación, análisis y trabajo en equipo. Además,
 
+
+
 > **[FIGURA 1.2: Qué es la ingeniería de software a los ojos de un estudiante]**
 > *Diagrama conceptual rotulado "Lo que yo creo que es la ingeniería de software", con la cara de un estudiante pensativo. Muestra un flujo: Idea → Requerimientos → Producto de software. Por encima, un Equipo y una línea de tiempo con los hitos Inicio (Start) → Estable (Stable) → Evolucionar (Evolve) → Tiempo. Debajo, dos recuadros: Competencia (Codificación, Análisis, Trabajo en equipo) y Lenguaje de programación (Java, JavaScript).*
 
@@ -79,6 +83,8 @@ el equipo necesita estar familiarizado con algún lenguaje de programación, com
 Con algo de suerte, Smith logró ingresar a la empresa TravelEssence como pasante en formación. Dave, el entrevistador, vio cierto potencial en Smith. A Dave le intrigó particularmente que Smith hubiera logrado dibujar la imagen de la Figura 1.2. La mayoría de los estudiantes no podían y se quedaban trabados aunque lo intentaran.
 
 TravelEssence es una empresa ficticia que usaremos como ejemplo a lo largo de este libro. TravelEssence ofrece servicios de reserva de hoteles en línea para viajeros (ver Figura 1.3). Además, TravelEssence provee Software como Servicio (SaaS, *Software as a Service*) para la operación de hoteles. SaaS significa que el dueño del software —en este caso, TravelEssence— provee software como un servicio a través de internet, y los clientes pagan una cuota mensual. Los hoteles pueden suscribirse y usar el servicio de TravelEssence para registrar la entrada (*check-in*) y la salida (*check-out*) de sus clientes, imprimir facturas, calcular impuestos, etc.
+
+<img width="1927" height="955" alt="fig_1_3_home_travelessence" src="https://github.com/user-attachments/assets/6183f747-1255-4e43-abc6-f8aa37bfd6fc" />
 
 > **[FIGURA 1.3: Página de inicio de TravelEssence]**
 > *Captura de pantalla de la página web de TravelEssence, con el logo y un menú de navegación (Home | Hotels | Deals | Travel Blog | Contact). El cuerpo muestra un buscador de hoteles ("Search for Hotel") con campos de destino, fechas de entrada y salida, cantidad de habitaciones, adultos y niños, y un botón "Search".*
