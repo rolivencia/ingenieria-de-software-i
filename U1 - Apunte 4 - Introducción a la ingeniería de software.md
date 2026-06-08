@@ -71,7 +71,7 @@ Mientras Smith se preparaba para su entrevista de pasantía en la industria, int
 
 Para Smith, la ingeniería de software consistía en tomar una idea y formar un equipo de acuerdo con los requisitos. Luego, el equipo transforma los requisitos en un producto de software. Para hacerlo, el equipo participa en algún tipo de lluvia de ideas, consenso, escritura y prueba de código, llegando a una estructura estable, manteniendo la satisfacción del usuario en todo momento y, finalmente, entregando el producto de software. Esto requiere que el equipo tenga competencias en codificación, análisis y trabajo en equipo. Además,
 
-
+<img width="2464" height="1347" alt="figura_1_2_vision_estudiante_es" src="https://github.com/user-attachments/assets/a6fecf01-2100-4548-a81c-fbe5466ed09d" />
 
 > **[FIGURA 1.2: Qué es la ingeniería de software a los ojos de un estudiante]**
 > *Diagrama conceptual rotulado "Lo que yo creo que es la ingeniería de software", con la cara de un estudiante pensativo. Muestra un flujo: Idea → Requerimientos → Producto de software. Por encima, un Equipo y una línea de tiempo con los hitos Inicio (Start) → Estable (Stable) → Evolucionar (Evolve) → Tiempo. Debajo, dos recuadros: Competencia (Codificación, Análisis, Trabajo en equipo) y Lenguaje de programación (Java, JavaScript).*
@@ -90,6 +90,8 @@ TravelEssence es una empresa ficticia que usaremos como ejemplo a lo largo de es
 > *Captura de pantalla de la página web de TravelEssence, con el logo y un menú de navegación (Home | Hotels | Deals | Travel Blog | Contact). El cuerpo muestra un buscador de hoteles ("Search for Hotel") con campos de destino, fechas de entrada y salida, cantidad de habitaciones, adultos y niños, y un botón "Search".*
 
 El paso de Smith por TravelEssence le brindó una experiencia completamente nueva. Para él, sus nuevos colegas parecían provenir de dos grupos: los que enunciaban lo que querían que el software hiciera, y los que escribían y probaban el software. La Figura 1.4 destaca los cambios drásticos que Smith experimentó. Si bien todos parecían hablar inglés, usaban palabras que él no entendía, especialmente el primer grupo. Como persona diligente, Smith confeccionó una lista de parte de esta jerga.
+
+<img width="2843" height="1658" alt="figura_1_4_vision_tras_pasantia_es" src="https://github.com/user-attachments/assets/ba5cfdf0-744c-4034-b214-900e575463eb" />
 
 > **[FIGURA 1.4: Qué es la ingeniería de software a los ojos de un estudiante tras la pasantía]**
 > *Versión ampliada del diagrama de la Figura 1.2. Conserva el flujo Idea → Requerimientos → Producto de software, el Equipo y la línea de tiempo (Inicio → Estable → Evolucionar → Tiempo). Los agregados nuevos aparecen resaltados en rojo: una corrección de errores (Bug fix) y Cambios (Changes) sobre la línea de tiempo; el lema "¡Habla el idioma y no hagas daño!" (Speak the language and do no harm!); en Competencia se suma Pruebas (Testing); y el recuadro de Lenguaje de programación pasa a llamarse Pila tecnológica (Technology stack), incorporando MongoDB y MySQL junto a Java y JavaScript.*
@@ -113,6 +115,8 @@ La competencia no solo involucraba análisis, codificación y trabajo en equipo,
 Nota: existe una miríada de pilas tecnológicas disponibles, y no es posible que nadie las aprenda todas. No obstante, nuestra recomendación a los estudiantes es que adquieran familiaridad con una pila tecnológica relevante de su elección.
 
 Smith se graduó y fue contratado en TravelEssence. Unos años más tarde, en una reunión, Smith y sus viejos compañeros de clase compartieron sus nuevas experiencias en el mundo comercial real. En esa ocasión, Smith dijo: "En TravelEssence, aunque todos parecían usar terminología diferente y cada uno hacía las cosas de manera distinta, parecía haber algo en común en lo que todos hacían". Uno de sus viejos compañeros le pidió a Smith que lo explicara mejor, pero Smith solo sacudió la cabeza y dijo: "No sé exactamente qué es".
+
+<img width="2972" height="1655" alt="figura_1_5_vision_joven_profesional_es" src="https://github.com/user-attachments/assets/4d2c30dd-d224-4fca-b768-09bec104d65a" />
 
 > **[FIGURA 1.5: Qué es la ingeniería de software a los ojos de un joven profesional]**
 > *Tercera versión del diagrama, ahora desde la perspectiva de un joven profesional. Mantiene los elementos anteriores (Idea → Requerimientos; Equipo; línea de tiempo Inicio → Estable → Evolucionar → Tiempo; el lema "¡Habla el idioma y no hagas daño!"). En lugar de un "Producto de software" aparece un "Sistema de software" rodeado de Interesados (Stakeholders), Valores, Principios y Prácticas. Los agregados respecto de la etapa de pasantía se resaltan en rojo: en Competencia se suman Liderazgo y Gestión (además de Codificación, Análisis, Pruebas y Trabajo en equipo); y la Pila tecnológica se amplía con SpringBoot, ReactNative, Node.js, SpringCloud, Docker y Rancher.*
