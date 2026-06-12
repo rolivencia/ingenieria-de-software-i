@@ -112,7 +112,7 @@ En un proyecto real, Cockburn reporta ~240 casos: 1 de tope, ~6 kite, ~180 sea-l
 
 ### B.4. Diagrama de ejemplo
 
-![Diagrama UML de casos de uso — Sistema de Gestión de Inventario](diagrama_casos_de_uso_inventario.svg)
+<img width="720" height="450" alt="diagrama_casos_de_uso_inventario" src="https://github.com/user-attachments/assets/c581f202-b2ce-4390-b547-82009acf8b5d" />
 
 El diagrama anterior muestra el actor primario *Operario de depósito* asociado a tres casos de nivel del mar, dos de los cuales **incluyen** la subfunción *Autenticar usuario* (nivel fish), que a su vez se apoya en el actor secundario *Servicio de Autenticación*.
 
