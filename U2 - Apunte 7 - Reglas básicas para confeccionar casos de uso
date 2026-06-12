@@ -1,0 +1,213 @@
+# Reglas básicas para confeccionar casos de uso
+
+### Diagramas y especificaciones, en sus cuatro niveles (kite, sea-level, fish, clam)
+
+### Material basado en Alistair Cockburn, *The Mini-Book on Use Cases* (2025)
+
+> **Sobre las fuentes.** Las reglas de **especificación** (Parte A), los **cuatro niveles**, los estilos y los conceptos clave provienen de Cockburn (2025) y *Writing Effective Use Cases* (2000). Las reglas del **diagrama UML** (Parte B) provienen de la tradición UML / Proceso Unificado (Jacobson, Booch & Rumbaugh, 1999); Cockburn mismo trabaja casi exclusivamente con texto y reserva el grafo para indexar. Se mantiene esa distinción a lo largo del documento.
+
+---
+
+## Parte A — Reglas de la especificación textual
+
+La especificación es el núcleo de la técnica. Cockburn distingue las **partes** de un caso de uso, las **reglas de redacción** de sus pasos y los **estilos** de escritura.
+
+### A.1. Anatomía: las partes de un caso de uso
+
+Toda especificación (cualquiera sea el estilo) se compone de:
+
+1. **Título** — una frase verbal en presente y voz activa que nombra la **meta** que se logra para el actor primario si el caso termina con éxito. Ej.: *"Registrar ingreso de mercadería"*.
+2. **Sistema** — la frontera de lo que se considera *afuera* (visible) frente a lo de *adentro* (oculto al lector). Nombrar mal el sistema es fuente de mucha confusión.
+3. **Actor primario** — persona, organización u otro sistema que persigue la meta. Se usa la palabra "actor" a propósito, para no distinguir si es humano, organización o sistema automatizado.
+4. **Nivel de meta** — uno de cuatro: *kite, sea-level, fish, clam* (ver A.4).
+
+> Los puntos 2 a 4 forman el **encabezado**. Muchos los omiten creyéndolos poco importantes; eso genera confusión apenas crece la cantidad de casos de uso. **Inclúyalos siempre.**
+
+5. **Escenario principal de éxito** — los pasos del caso cuando la meta se logra en una situación típica.
+6. **Pasos de acción** — cada paso sigue una gramática simple: **sujeto · verbo · objeto directo**. Cada verbo es una meta que se cumple (y por eso podría ser, a su vez, el título de otro caso de uso). Típicamente **3 a 9 pasos** funcionan bien.
+7. **Extensiones** — la sección de los *"¿pero qué pasa si…?"*.
+8. **Condición de extensión** — la circunstancia que podría encontrarse (otra variante de éxito o un posible fracaso).
+9. **Pasos de manejo de la extensión** — escritos exactamente con el mismo estilo que los pasos del escenario principal.
+
+### A.2. Reglas de redacción de los pasos
+
+- **Sin tecnología.** Los pasos no mencionan la tecnología de entrada/salida. Asuma interfaces de voz *y* de pantalla. Verbos útiles para entrada: *identifica, ingresa, selecciona, indica*; para salida: *presenta, notifica*. Esto hace los casos más estables en el tiempo y más legibles.
+- **Identifique los datos a baja precisión.** "El usuario proporciona sus datos personales" basta en esta etapa. El detalle de los campos va en documentos laterales.
+- **Nombre a los actores secundarios.** Si un servicio externo ya existe, escríbalo como actor secundario: *"El sistema hace que el servicio de autenticación autentique al usuario"* (deja claro que no se programa en este proyecto). Si en cambio hay que construirlo, será un paso que enlaza a otro caso de uso (nivel fish).
+- **Escenario principal corto, extensiones largas.** Es normal y deseable: un caso real puede tener seis pasos de éxito y páginas de extensiones. Ahí está la acción.
+
+### A.3. Estilos de escritura
+
+| Estilo | Cómo se ve | Cuándo conviene |
+|---|---|---|
+| **Casual** | Prosa corrida, sin numeración | Bocetar rápido; muy legible; suele quedar incompleto |
+| **Formal** | Encabezado, pasos numerados, sección de extensiones aparte | Cuando se busca claridad y control de huecos |
+| **Concreto** | Usa ejemplos reales ("Mars bar", "$35") en vez de genéricos ("producto", "monto") | Cuando se quiere que cualquiera lo entienda sin entrenamiento previo |
+
+> Regla práctica de Cockburn: ambos estilos son válidos; el casual se escribe rápido y se lee fácil pero suele estar incompleto, el formal estructura y permite "pinchar" huecos. **Sacrifique perfección por legibilidad**: un caso aproximado que se lee vale más que uno perfecto que nadie abre.
+
+### A.4. Los cuatro niveles (metáfora de altitud)
+
+Todo verbo implica una **duración**, y las personas perciben esa duración de forma bastante uniforme. Cockburn usa esa intuición como metáfora de **altitud** para clasificar las metas:
+
+| Nivel | Metáfora | Qué representa | Duración típica | Prefijo |
+|---|---|---|---|---|
+| **Kite** | Cometa / barrilete | Resumen de negocio o macroproceso; el actor primario necesita **múltiples interacciones** con el sistema a lo largo del tiempo | Días, semanas o años | `+` |
+| **Sea-level** | Nivel del mar | **Tarea de usuario**: proceso de negocio elemental o transacción atómica, hecho de una sentada | 2 a 20 minutos | (ninguno) |
+| **Fish** | Pez | **Subfunción** de una tarea de nivel del mar. Solo se escribe si es demasiado complejo para embeberlo o si se reutiliza en varios casos | Segundos a minutos | `–` |
+| **Clam** | Almeja | Demasiado bajo nivel: cumple los requisitos de un caso de uso pero **nunca debería escribirse** como tal. Se usa como etiqueta de historias de usuario o asignaciones de trabajo, no como caso de uso | Instantáneo | — |
+
+Notas operativas:
+
+- El **nivel del mar es el ancla**: la tarea de 2–20 minutos que la mayoría de las personas reconoce intuitivamente ("Comprar un \<algo\>", "Llenar el tanque de nafta", "Actualizar mi perfil").
+- Los prefijos `+` (kite) y `–` (fish) son un truco de Cockburn: ordenan los nombres en el sistema de archivos y avisan el nivel de un vistazo, separando visualmente los casos de resumen y de subfunción de los de nivel del mar.
+- Un caso **kite** está pensado para descomponerse: cada uno de sus pasos suele ser un caso de nivel del mar. Sirve además como **tabla de contenidos** del conjunto.
+- **No abuse de los fish.** Tener muchos casos diminutos vuelve el sistema más difícil de entender, no más fácil.
+- Para descomponer correctamente: hacia abajo se pregunta *"¿cómo se hace eso?"*; hacia arriba, *"¿para lograr qué?"*. Y al bajar, **manténgase fuera del sistema**: describa qué hará el sistema, no cómo lo diseñará el diseñador.
+
+### A.5. Siete conceptos clave (reglas de oro de la redacción)
+
+Cockburn sostiene que, cualquiera sea la técnica, hay que dominar siete conceptos:
+
+1. **Gestionar la precisión.** Diga lo justo: ni de menos (cuando aún no sabe) ni de más (cuando ya sabe). La precisión escala de "solo el título" a "el escenario completo" a "todos los casos de prueba".
+2. **Entender que los verbos implican duración.** Use la altitud para no mezclar un verbo de pocos segundos junto a uno de meses; el lector siente el desbalance y se confunde.
+3. **Descomponer verbos en verbos de menor duración.** Las metas tienen submetas; cualquier frase verbal de un paso puede ser el título de otro caso de uso de nivel inferior.
+4. **Descomponer todo, no solo los verbos.** También se trocean los datos, las reglas de negocio, las variantes tecnológicas, las interfaces y el rendimiento, para desarrollar de a fracciones.
+5. **Escribir desde la perspectiva del usuario,** no desde dentro de la "caja" del sistema. (Error típico: *"Aceptar tarjeta. Aceptar PIN. Validar PIN…"*, escrito desde adentro.)
+6. **Escribir solo las necesidades, no la enciclopedia.** Lo que destruye la legibilidad —y por ende el valor— es volcar todo dentro del caso. El detalle va en documentos laterales enlazados.
+7. **Sacrificar perfección por legibilidad.** Los casos casuales se leen; los difíciles de leer, no.
+
+*Bonus:* buscar el **Walking Skeleton** (esqueleto andante): la implementación mínima de extremo a extremo que conecta las partes y "hace algo", como punto de partida para el desarrollo incremental.
+
+---
+
+## Parte B — Reglas del diagrama (notación UML)
+
+> Recordatorio: esta notación pertenece a UML / Proceso Unificado (Jacobson, Booch & Rumbaugh, 1999). En el enfoque de Cockburn, **el diagrama es un índice y un mapa de relaciones, no el portador del comportamiento**: el comportamiento vive en la especificación textual. Un diagrama vistoso con especificaciones pobres no sirve de mucho.
+
+### B.1. Elementos del diagrama de casos de uso UML
+
+- **Actor** — figura de palitos (*stick figure*). Representa un rol externo (persona, organización u otro sistema). El **actor primario** se ubica a la izquierda (inicia); los **secundarios**, a la derecha (son invocados por el sistema). Conviene rotular el secundario con el estereotipo `«secundario»`.
+- **Caso de uso** — **elipse** con el nombre (frase verbal: meta).
+- **Límite del sistema** — **rectángulo** que encierra los casos de uso y lleva el nombre del sistema. Define qué queda adentro y qué afuera.
+- **Asociación** — **línea** entre actor y caso de uso: indica que el actor participa de ese caso. (No lleva flecha de "flujo de datos"; a lo sumo, navegabilidad.)
+
+### B.2. Relaciones entre casos de uso
+
+- **«include»** — flecha **punteada** desde el caso base hacia el incluido. El comportamiento incluido **siempre** ocurre como parte del base. Es la forma de factorizar una subfunción reutilizada (típicamente nivel *fish*), como *"Autenticar usuario"*.
+- **«extend»** — flecha **punteada** desde la extensión hacia el caso base. El comportamiento adicional ocurre **solo bajo cierta condición** (en un punto de extensión). Es el equivalente gráfico de una sección de extensiones.
+- **Generalización** — flecha de **triángulo hueco** entre actores (o entre casos) que comparten estructura: un actor especializa a otro.
+
+### B.3. La vista "velero" (sailboat) de Cockburn
+
+Como puente entre diagrama y niveles, Cockburn dibuja el **anidamiento** del conjunto:
+
+- Un único caso de uso en el **tope**, cuyo único fin es sostener el grafo.
+- Debajo, unos pocos casos **kite** (resumen).
+- Cada kite se abre en numerosos casos **sea-level**.
+- Los **fish** solo aparecen cuando se reutilizan o son demasiado complejos para embeberse.
+- "Clam" es la etiqueta para lo que está por debajo del umbral de merecer un caso propio.
+
+En un proyecto real, Cockburn reporta ~240 casos: 1 de tope, ~6 kite, ~180 sea-level y ~30 fish.
+
+### B.4. Diagrama de ejemplo
+
+![Diagrama UML de casos de uso — Sistema de Gestión de Inventario](diagrama_casos_de_uso_inventario.svg)
+
+El diagrama anterior muestra el actor primario *Operario de depósito* asociado a tres casos de nivel del mar, dos de los cuales **incluyen** la subfunción *Autenticar usuario* (nivel fish), que a su vez se apoya en el actor secundario *Servicio de Autenticación*.
+
+---
+
+## Parte C — Ejemplo trabajado en los cuatro niveles
+
+Tomamos un **Sistema de Gestión de Inventario** (afín a los sistemas asignados en la cátedra) y mostramos un caso por nivel.
+
+### Nivel kite — `+Gestionar el ciclo de vida del stock`
+
+```
+Sistema:        Conjunto de sistemas de gestión de inventario
+Actor primario: Todos
+Nivel de meta:  Kite (resumen)
+
+Escenario principal de éxito:
+1. El proveedor entrega mercadería y el operario *registra el ingreso de mercadería*.
+2. A lo largo del tiempo, los operarios *registran egresos de mercadería* por ventas o consumos.
+3. El supervisor *consulta el stock* y *genera órdenes de reposición* cuando corresponde.
+4. Periódicamente, el responsable *realiza el inventario físico* y *ajusta diferencias*.
+5. Al final de su vida útil, el responsable *da de baja artículos obsoletos*.
+
+(Las frases en cursiva enlazan a casos de nivel del mar.)
+```
+
+### Nivel del mar (sea-level) — `Registrar ingreso de mercadería`
+
+```
+Sistema:        Sistema de Gestión de Inventario
+Actor primario: Operario de depósito
+Nivel de meta:  Nivel del mar (tarea de usuario)
+Precondición:   El operario inició sesión y está verificado.
+
+Escenario principal de éxito:
+1. El operario identifica el remito y el proveedor. El sistema recupera la orden de compra asociada.
+2. El operario ingresa los artículos recibidos y sus cantidades.
+3. El sistema verifica las cantidades contra la orden de compra y actualiza el stock.
+4. El operario confirma la recepción. El sistema registra el movimiento y notifica al área de compras.
+
+Extensiones:
+1a. No existe orden de compra asociada al remito:
+      El sistema permite registrar el ingreso como "sin orden" y lo marca para revisión.
+2a. La cantidad recibida difiere de la esperada:
+      El sistema registra la diferencia y solicita motivo al operario.
+3a. Un artículo no figura en el catálogo:
+      El operario *da de alta el artículo* o marca la línea como pendiente.
+4a. Falla de energía durante la carga:
+      El sistema autoguarda intermitentemente y permite retomar.
+```
+
+### Nivel fish — `–Autenticar usuario`
+
+```
+Sistema:        Sistema de Gestión de Inventario
+Actor primario: Cualquier usuario
+Nivel de meta:  Fish (subfunción)
+Disparador:     Se solicitó autenticar a un usuario.
+
+Escenario principal de éxito:
+1. El sistema solicita las credenciales (usuario y contraseña).
+2. El sistema valida las credenciales contra el servicio de autenticación.
+3. El sistema marca la autenticación como exitosa y devuelve el control al caso llamador.
+
+Extensiones:
+2a. La combinación es incorrecta:
+      El sistema concede dos intentos más.
+2b. Se agotaron los intentos:
+      .1. El sistema bloquea la cuenta.
+      .2. El sistema notifica al usuario y registra el evento.
+```
+
+> Se escribe como caso aparte porque es **complejo** (múltiples modos de fallo y recuperación) y se **reutiliza** (lo incluyen varios casos de nivel del mar). De no cumplirse ninguna de esas dos condiciones, no merecería un caso propio.
+
+### Nivel clam — *no se escribe*
+
+Acciones como *"hacer clic en el botón Guardar"* o *"validar que el campo cantidad sea numérico"* son **clam**: cumplen formalmente con la definición de caso de uso (tienen meta, pasos y modos de fallo), pero **nunca** deben expandirse a un caso de uso propio. Se mencionan, a lo sumo, como una historia de usuario o una asignación de trabajo dentro del desarrollo del caso de nivel superior que las contiene.
+
+---
+
+## Lista de verificación rápida
+
+- [ ] ¿El título es una frase verbal en presente que nombra una meta?
+- [ ] ¿Están el sistema, el actor primario y el nivel de meta en el encabezado?
+- [ ] ¿Cada paso sigue *sujeto · verbo · objeto* y evita mencionar tecnología?
+- [ ] ¿El escenario principal tiene entre 3 y 9 pasos?
+- [ ] ¿Cada extensión nombra una condición y su manejo?
+- [ ] ¿Los niveles de los verbos son consistentes (sin mezclar segundos con meses)?
+- [ ] ¿Los datos están a baja precisión y el detalle quedó en documentos laterales?
+- [ ] ¿El caso se lee fácil para alguien sin entrenamiento? (Si no, recortar.)
+
+---
+
+## Referencias
+
+- Cockburn, A. (2025). *The Mini-Book on Use Cases* (The Simplifying Series). Humans and Technology Press.
+- Cockburn, A. (2000). *Writing Effective Use Cases*. Addison-Wesley.
+- Jacobson, I., Booch, G. & Rumbaugh, J. (1999). *The Unified Software Development Process*. Addison-Wesley.
